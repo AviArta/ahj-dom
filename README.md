@@ -1,6 +1,20 @@
-# Webpack5
+# DOM: moving an element
+---
+[![Build status](https://ci.appveyor.com/api/projects/status/gi594o6g6a6p3h7h?svg=true)](https://ci.appveyor.com/project/AviArta/ahj-dom)
 
-[Руководство по настройке Webpack](https://webpack.js.org/guides/)
-[Руководство по настройке GitHub Actions](https://docs.github.com/en/actions/quickstart)
+### Описание
 
-![CI](https://github.com/<AviArta>/<ahj-env>/actions/workflows/web.yml/badge.svg)
+
+- Реализовано игровое поле 4x4 в котором каждые 2 секунды в случайной ячейке поля появляется изображение персонажа, в виде картинки `img`
+- Картинка появляется в случайной ячейке поля
+- Логика построения игрового поля и появления картинки реализована в классе [Playboard](./src/js/playboard.js).
+- Инициализация поля и логика смены картинки (с использованием `setInterval`) реализована в [app.js](./src/js/app.js)
+- Обеспечена проверка, предотвращающая появление картинки два раза подряд в одной и той же ячейке поля.
+
+Для персонажа использована картинка:
+
+![](./src/img/goblin.png)
+
+---
+
+Обеспечено покрытие тестами.
