@@ -1,3 +1,44 @@
+:root {
+  --cell-size: 16vh;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
 body {
-    color: #999;
+  background-color: rgb(231, 204, 222);
+}
+
+.board-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-color: rgb(187, 61, 130);
+  background-size: cover;
+  flex-wrap: wrap;
+  height: 100%;
+  opacity: 0.8;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 2px;
+  grid-row-gap: 2px;
+}
+
+.cell {
+  position: relative;
+  width: var(--cell-size);
+  height: var(--cell-size);
+  background-color: rgb(234, 210, 227);
+}
+
+.cell_selected {
+  background-image: url('../img/goblin.png');
+  background-position: center;
+  background-size: contain;
 }
