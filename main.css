@@ -1,2 +1,1 @@
-// extracted by mini-css-extract-plugin
-export {};
+:root{--cell-size:16vh}body,html{height:100%;margin:0}body{background-color:#e7ccde}.board-container{align-items:center;background-color:#bb3d82;background-position:50%;background-size:cover;display:flex;flex-wrap:wrap;height:100%;justify-content:center;opacity:.8}.board{display:grid;grid-template-columns:repeat(4,1fr);grid-column-gap:2px;grid-row-gap:2px}.cell{background-color:#ead2e3;height:var(--cell-size);position:relative;width:var(--cell-size)}.cell_selected{background-image:url(2dbd01ce16c0fa83cb67.png);background-position:50%;background-size:contain}
